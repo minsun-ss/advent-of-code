@@ -1,3 +1,4 @@
-.ipynb_checkpoints/
-aoc2017/data
-
+.ipynb_checkpoints
+.zig-cache
+**/zig-out
+**/data/
