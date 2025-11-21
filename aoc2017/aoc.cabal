@@ -1,0 +1,9 @@
+cabal-version:          >= 1.2
+name:                   aoc2017
+version:                0.0.1
+build-type:             Simple
+
+executable 1
+    main-is:            day1.hs
+    hs-source-dirs:     src
+    build-depends:      base

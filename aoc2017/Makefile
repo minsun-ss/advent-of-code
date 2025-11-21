@@ -3,12 +3,12 @@
 day: 
 	@echo "Working on day $(word 2,$(MAKECMDGOALS))"
 	@mkdir -p build
-	@ghc -outputdir build -o build/output src/day$(word 2,$(MAKECMDGOALS)).hs
-	@./build/output
+	@cabal run --builddir=build $(word 2,$(MAKECMDGOALS))
 
 clean:
-	rm -rf build
-
+	@echo "Purging build folders..."
+	@rm -rf build
+	@rm -rf zig-out
 %:
 	@:
 
