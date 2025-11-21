@@ -10,7 +10,7 @@ Christmas! I now have a tshirt and sticker on the way because I feel (justifiabl
 # Small things I've learned
 
 - learned to lean more heavily into functools. i really like sum(list), so reduce(func, list) is increeddddddibly
-handy. i don't really do a whole of map for these problems, but maybe i should.
+handy. i don't really do a whole lot of map for these problems, but maybe i should.
 - in an offshoot to that, I did the equivalent of product(list) using reduce(mul, list) but then got tired of 
 importing mul so ended up using more lambdas
 - got better at fancier lambdas. especially with cool groupbys in pandas
@@ -19,4 +19,3 @@ quite recently - https://mathoverflow.net/questions/25983/intuitive-crutches-for
 had been kind of lost as to how to use some of these mental shortcuts. had been thinking i could do it, somehow, via
 matrices and this problem helped a looottttt with that mental path.
 - discovered pow() has a built in modulus in it? very nifty!
-
