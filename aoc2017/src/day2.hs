@@ -12,10 +12,9 @@ part2 rows = sum $ map (findDivisor . reverseSort) $ rows
   where
     findDivisor :: [Integer] -> Integer
     findDivisor xs = tryFrom xs
-        where
-            tryFrom [] = -1
-            tryFrom remaining = if result /= -1 then result else tryFrom (drop 1 remaining)
-                where result = divisible remaining
+      where
+        tryFrom [] = -1
+        tryFrom remaining = if (divisible remaining /= -1) then (divisible remaining) else tryFrom (drop 1 remaining)
 
     divisible :: [Integer] -> Integer
     divisible [x] = -1
