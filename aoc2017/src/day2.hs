@@ -1,6 +1,5 @@
 import Data.List 
 
-
 part1 :: [[Integer]] -> Integer
 part1 rows = sum . map minmax $ rows
   where
@@ -11,6 +10,7 @@ part2 :: [[Integer]] -> Integer
 part2 rows = sum $ map (findDivisor . reverseSort) $ rows 
   where
     findDivisor :: [Integer] -> Integer
+    -- findDivisor xs = if (divisible xs /= -1) then (divisible xs) else divisible (drop 1 xs)
     findDivisor xs = tryFrom xs
       where
         tryFrom [] = -1
@@ -27,5 +27,7 @@ main = do
     content <- map ( map read . words ) . lines <$> readFile("data/day2")
     let result1 = part1 content
     let result2 = part2 content
-    putStrLn ("Part 1 Result: " ++ (show result1)) 
-    putStrLn ("Part 2 Result: " ++ (show result2))
+    print ("Part 1 Result: \n")
+    print(result1) 
+    print ("Part 2 Result: \n")
+    print(result2)
