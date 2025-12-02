@@ -7,3 +7,7 @@ executable 1
     main-is:            day1.hs
     hs-source-dirs:     src
     build-depends:      base
+executable 2
+    main-is:            day2.hs
+    hs-source-dirs:     src
+    build-depends:      base

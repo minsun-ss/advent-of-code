@@ -3,3 +3,5 @@
 **/zig-out
 **/data/
 **data/*.txt
+**build/
+**test.ipynb
